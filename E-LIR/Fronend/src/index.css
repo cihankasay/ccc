@@ -1,0 +1,97 @@
+/* ROOT: Dark Mode tamamen devre dışı */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: only light !important;  /* 🔥 iPhone dark mode auto styling kapalı */
+  background-color: #ffffff !important;
+  color: #111827 !important;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Anchor */
+a {
+  font-weight: 500;
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  color: #1d4ed8;
+}
+
+/* BODY RESET (iPhone safe) */
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  background: #f3f4f6;
+  -webkit-text-size-adjust: 100%;
+  overscroll-behavior-y: none;
+}
+
+/* Headings */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* BUTTONS (neutral) */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #e5e7eb;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #2563eb;
+}
+button:focus,
+button:focus-visible {
+  outline: 3px auto -webkit-focus-ring-color;
+}
+
+/* iPhone dark-mode input fix (GLOBAL) */
+input, textarea {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #111827 !important;
+  -webkit-text-fill-color: #111827 !important; /* 🔥 Safari zorunlu */
+  border: 1px solid #d1d5db !important;
+  font-size: 16px !important;
+  box-sizing: border-box;
+}
+
+/* Default light mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: only light !important;
+    background-color: #ffffff !important;
+    color: #111827 !important;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+input::placeholder {
+  color: #6b7280 !important; /* Slate-500 */
+  opacity: 1 !important;
+}
+
+.placeholder-strong::placeholder {
+  color: #4b5563 !important; /* Slate-600 */
+  opacity: 1 !important;
+}
+

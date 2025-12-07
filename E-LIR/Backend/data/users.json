@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "sicil": "1001",
+    "password": "1234",
+    "full_name": "Cihan Ops",
+    "sicil_no": 1001,
+    "role": "HAREKAT",
+    "is_active": 1
+  },
+  {
+    "id": 2,
+    "sicil": "2001",
+    "password": "1234",
+    "full_name": "Ahmet Ramp",
+    "sicil_no": 2001,
+    "role": "RAMP",
+    "is_active": 1
+  },
+  {
+    "id": 3,
+    "sicil": "2002",
+    "password": "1234",
+    "full_name": "Mehmet Ramp",
+    "sicil_no": 2002,
+    "role": "RAMP",
+    "is_active": 1
+  }
+]
